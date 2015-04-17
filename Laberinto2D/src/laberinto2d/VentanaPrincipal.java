@@ -21,5 +21,6 @@ public class VentanaPrincipal extends JFrame implements Constantes {
         this.getContentPane().setLayout(new BorderLayout());
         this.getContentPane().add(lienzo);
         this.setSize(lienzo.getWidth(), lienzo.getHeight());
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }

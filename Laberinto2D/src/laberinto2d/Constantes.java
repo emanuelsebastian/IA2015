@@ -10,7 +10,7 @@ package laberinto2d;
  * @author EMANUEL
  */
 public  interface Constantes {
-    public final int sizeCell = 16;
+    public final int sizeCell = 32;
     public final int widthGameWorld = 16;
     public final int heightGameWorld = 16;
 

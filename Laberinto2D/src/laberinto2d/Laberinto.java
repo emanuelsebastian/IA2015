@@ -5,6 +5,7 @@
  */
 package laberinto2d;
 
+import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.JComponent;
 
@@ -39,7 +40,20 @@ public class Laberinto extends JComponent implements Constantes {
             }
         }
     }
+    
+    
+    @Override
+    public void update(Graphics g) {
+        for (int i = 0; i<heightGameWorld ; i++) {
+            for (int j = 0; j<widthGameWorld ; j++) {
+                if (casillas[i][j].seleccionado) {
+                    casillas[i][j].update(g);
+                    g.setColor(Color.BLUE);
+                }
+            }
+        }
 
 
+        }
 }
 
